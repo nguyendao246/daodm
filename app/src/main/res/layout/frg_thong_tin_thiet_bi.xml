@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="abnc"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Basic Info"
+                        android:textColor="@color/background" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:id="@+id/img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Brand"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+
+                            android:id="@+id/tv_nhan_hieu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Model"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_mau"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="CPU"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_cpu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="RAM"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_ram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Storage"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_o_luu_tru"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Android Version"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_phien_ban"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Resolution"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/tv_do_phan_giai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Status"
+                        android:textColor="@color/background" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.github.lzyzsd.circleprogress.DonutProgress
+                                android:id="@+id/donut_progress"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                custom:donut_finished_color="@color/text"
+                                custom:donut_finished_stroke_width="3dp"
+                                custom:donut_progress="10"
+                                custom:donut_text_color="@color/text"
+                                custom:donut_unfinished_stroke_width="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Storage"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/tv_dung_luong_o"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:lines="1"
+                                android:text="Dung lượng"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:layout_width="90dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_button"
+                                android:text="Clean"
+                                android:textColor="@color/text"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.github.lzyzsd.circleprogress.DonutProgress
+                                android:id="@+id/donut_progress_ram"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                custom:donut_finished_color="@color/text"
+                                custom:donut_finished_stroke_width="3dp"
+                                custom:donut_progress="30"
+                                custom:donut_text_color="@color/text"
+                                custom:donut_unfinished_stroke_width="3dp" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="RAM"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/tv_dung_luong_ram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:lines="1"
+                                android:text="Dung lượng"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:layout_width="90dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_button"
+                                android:text="Boost"
+                                android:textColor="@color/text"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.github.lzyzsd.circleprogress.DonutProgress
+                                android:id="@+id/donut_progress_cpu"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                custom:donut_finished_color="@color/text"
+                                custom:donut_finished_stroke_width="3dp"
+                                custom:donut_suffix_text=""
+                                custom:donut_text_color="@color/text"
+                                custom:donut_unfinished_stroke_width="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="CPU"
+                                android:textColor="@android:color/black"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/tv_dung_luong_cpu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:lines="1"
+                                android:text="Dung lượng"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:layout_width="90dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_button"
+                                android:text="Cool dowm"
+                                android:textColor="@color/text"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More"
+                        android:textColor="@color/background" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Multi - Touch"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Gravity Sensor"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Proximity Sensor"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Temperature Sensor"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Gyroscope"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Pressure Sensor"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Light Sensor"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Magnetic Field"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Humidity Sensor"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Rotation Sensor"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Accelerometer"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Linear Acceleration"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="Lossless"
+                            android:textColor="@color/colorBack"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

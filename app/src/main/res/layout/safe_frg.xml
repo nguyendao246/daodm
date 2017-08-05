@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutsafe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/imgticksmall"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/tick" />
+
+                <TextView
+                    android:id="@+id/tvstatus"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/detail"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="SAFE"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvresultvirus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

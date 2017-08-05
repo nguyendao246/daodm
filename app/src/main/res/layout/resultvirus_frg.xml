@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutsafe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@color/background"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvstatus"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/detail"
+                    android:layout_alignLeft="@+id/detail"
+                    android:layout_alignStart="@+id/detail"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="SAFE"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/detail"
+                    style="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginStart="26dp"
+                    android:text="no thread now"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/imgticksmall"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_safe" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvresultvirus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouticon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/layoutsafe"
+        android:layout_toRightOf="@+id/layoutsafe"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/donut_progress"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                custom:donut_finished_color="@android:color/white"
+                custom:donut_finished_stroke_width="3dp"
+                custom:donut_text_size="0dp"
+                custom:donut_unfinished_color="@color/text"
+                custom:donut_unfinished_stroke_width="3dp" />
+
+
+            <ImageView
+                android:id="@+id/imgsafe"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_safe" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donut_progress"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="Safe"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_phat_hien"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:text="Your devide is safe..."
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"></LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

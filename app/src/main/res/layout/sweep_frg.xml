@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center">
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/arc_progress"
+            android:layout_width="160dp"
+
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            custom:arc_bottom_text="@string/download"
+            custom:arc_finished_color="@android:color/white"
+            custom:arc_suffix_text_size="19sp"
+            custom:arc_text_color="@android:color/white"
+
+            custom:arc_unfinished_color="@color/arcProgress" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvscanapp"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Scanning:abc"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ovalmalware"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/oval" />
+
+            <ImageView
+                android:id="@+id/imgmalware"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/malware"
+                android:foregroundGravity="center" />
+
+            <TextView
+                android:id="@+id/numbermalware"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ovalmalware"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Malware"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ovalprivacy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:src="@drawable/oval" />
+
+            <ImageView
+                android:id="@+id/imgprivacy"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/padlock"
+                android:foregroundGravity="center" />
+
+            <TextView
+                android:id="@+id/numberprivacy"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:foregroundGravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ovalprivacy"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Privacy"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Much more  and safer...\nVirus database version ..."
+        android:textColor="@android:color/white" />
+</LinearLayout>

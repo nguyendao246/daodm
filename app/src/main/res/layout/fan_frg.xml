@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgticksmall"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/tick" />
+
+                    <TextView
+                        android:id="@+id/tvstatus"
+                        style="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/detail"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="SAFE"
+                        android:textColor="#ffffff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lvresultvirus"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fan"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/oval" />
+
+            <ImageView
+                android:id="@+id/tickcooler"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:src="@drawable/tick" />
+
+            <TextView
+                android:id="@+id/xong"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Done"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layouticon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/background"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/imgfan"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circlefan"
+            android:src="@drawable/fan"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/textViewCooler"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgfan"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:text="Cooling down..."
+            android:textColor="@android:color/white"></TextView>
+
+    </RelativeLayout>
+</FrameLayout>
